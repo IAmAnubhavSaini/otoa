@@ -1,31 +1,33 @@
 {
-    "name": "otoa",
-    "type": "module",
-    "version": "2025.04.16",
-    "description": "object to array | Convert an object to array with/without given key-prefix. | Basically reverses what atoo does.",
-    "main": "src/index.js",
-    "scripts": {
-        "test": "./node_modules/.bin/jasmine"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/IAmAnubhavSaini/otoa.git"
-    },
-    "keywords": [
-        "object to array",
-        "array",
-        "object",
-        "javascript"
-    ],
-    "author": "Anubhav Saini <IAmAnubhavSaini+git@gmail.com>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/IAmAnubhavSaini/otoa/issues"
-    },
-    "homepage": "https://github.com/IAmAnubhavSaini/otoa#readme",
-    "devDependencies": {
-        "@types/jasmine": "^5.1.7",
-        "@types/node": "^22.14.1",
-        "jasmine": "^5.6.0"
-    }
+  "name": "otoa",
+  "type": "module",
+  "version": "2026.0.0",
+  "description": "object to array | Convert an object to array with/without given key-prefix. | Basically reverses what atoo does.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine",
+    "build": "./node_modules/.bin/tsc --project tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IAmAnubhavSaini/otoa.git"
+  },
+  "keywords": [
+    "object to array",
+    "array",
+    "object",
+    "javascript"
+  ],
+  "author": "Anubhav Saini <IAmAnubhavSaini+git@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IAmAnubhavSaini/otoa/issues"
+  },
+  "homepage": "https://github.com/IAmAnubhavSaini/otoa#readme",
+  "devDependencies": {
+    "@types/jasmine": "^5.1.7",
+    "@types/node": "^22.14.1",
+    "jasmine": "^5.6.0",
+    "typescript": "^5.8.3"
+  }
 }

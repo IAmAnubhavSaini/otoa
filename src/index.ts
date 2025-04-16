@@ -2,18 +2,18 @@
 
 /**
  *
- * @param {Object} obj
- * @param {string} keyPrefix
+ * @param {Record<string, unknown>} obj the object
+ * @param {string} keyPrefix the prefix used for picking matching keys; empty for all keys
  * @returns {Array} The array of the object values that startsWith the keyPrefix key
  */
-function objectToArray(obj, keyPrefix = "") {
+function objectToArray(obj: Record<string, unknown>, keyPrefix = "") {
     return Object.keys(obj)
         .filter((key) => key.startsWith(keyPrefix))
         .sort()
         .map((key) => obj[key]);
 }
 
-function objectToKeyValueArray(obj, keyPrefix = "") {
+function objectToKeyValueArray(obj: Record<string, unknown>, keyPrefix = "") {
     return Object.keys(obj)
         .filter((key) => key.startsWith(keyPrefix))
         .sort()

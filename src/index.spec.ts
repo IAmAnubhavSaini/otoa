@@ -1,8 +1,8 @@
-import { objectToArray, objectToKeyValueArray } from "./index.mjs";
+import { objectToArray, objectToKeyValueArray } from "./index.js";
 
 describe("objectToArray", () => {
     it("works for a i-n object", () => {
-        var obj = { "i-0": 0, "i-1": 1 };
+        var obj: Record<string, number> = { "i-0": 0, "i-1": 1 };
         var actual = objectToArray(obj, "i-");
         expect(typeof actual === typeof []).toBeTrue();
         expect(Array.isArray(actual)).toBeTrue();
